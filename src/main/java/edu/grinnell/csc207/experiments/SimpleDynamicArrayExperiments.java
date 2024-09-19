@@ -56,5 +56,15 @@ public class SimpleDynamicArrayExperiments {
     for (int i = 0; i < 10; i++) {
       pen.println(numbers.get(i) + "^2 = " + square(numbers.get(i)));
     } // for i
+
+    DynamicArray<String> strings = new SimpleDynamicArray<String>();
+    strings.set(0, "test");
+    strings.set(0, "test_again");
+    strings.set(1, "test1");
+    strings.set(3, "test2");
+    strings.set(4, strings.get(0));
+    for (int i = 0; i < 10; i++) {
+      pen.println("strings[" + i + "] = " + strings.get(i));
+    } // for
   } // main(String[])
 } // class SimpleDynamicArrayExperiment
